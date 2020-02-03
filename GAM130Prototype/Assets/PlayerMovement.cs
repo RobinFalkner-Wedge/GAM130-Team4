@@ -46,7 +46,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //creates a small sphere that outputs a check value depending on what is in sphere
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        //isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, 2.5f);
         
         //resets the velocity value if the player is grounded and not falling anymore.
         if(isGrounded && velocity.y < 0)

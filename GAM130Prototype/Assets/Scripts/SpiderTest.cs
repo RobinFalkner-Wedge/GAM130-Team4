@@ -21,9 +21,9 @@ public class SpiderTest : MonoBehaviour
     void Update()
     {
 
-        Vector3 raycastDir = thing.transform.position - transform.position;
+        //Vector3 raycastDir = thing.transform.position - transform.position;
 
-        isChase = Physics.Raycast(transform.position, Vector3.down, 2.5f);
+        //isChase = Physics.Raycast(transform.position, Vector3.down, 2.5f);
 
 
 

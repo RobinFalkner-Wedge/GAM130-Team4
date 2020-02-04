@@ -86,6 +86,21 @@ public class PlayerMovement : MonoBehaviour
             Vector3 sprint = transform.right * x + transform.forward * z;
             controller.Move(sprint * speed * sprintMultiplier * Time.deltaTime);
         }
+
+        if (Input.GetAxis("Horizontal") != 0 && isGrounded)
+        {
+            viewMod.SetBool("Moving", true);
+        }
+        else if (isGrounded && Input.GetAxis("Vertical") != 0)
+        {
+            viewMod.SetBool("Moving", true);
+        }
+        else
+        {
+            viewMod.SetBool("Moving", false);
+        }
+
+
     }
     void PlayerJump()
     {

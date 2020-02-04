@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 424715649}
   - component: {fileID: 424715651}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Spider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -272,7 +272,7 @@ PrefabInstance:
     - target: {fileID: 7649121168961129539, guid: c1c2a40dcba45f147b94bffa0690f6ae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.3
+      value: 18.4
       objectReference: {fileID: 0}
     - target: {fileID: 7649121168961129539, guid: c1c2a40dcba45f147b94bffa0690f6ae,
         type: 3}
@@ -282,7 +282,7 @@ PrefabInstance:
     - target: {fileID: 7649121168961129539, guid: c1c2a40dcba45f147b94bffa0690f6ae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 72.8
+      value: -28.8
       objectReference: {fileID: 0}
     - target: {fileID: 7649121168961129539, guid: c1c2a40dcba45f147b94bffa0690f6ae,
         type: 3}
@@ -391,6 +391,11 @@ PrefabInstance:
     - target: {fileID: 4926516711624024257, guid: 0dd57a0a3e8a4c6479c6eae3dce03e8d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926516711624024259, guid: 0dd57a0a3e8a4c6479c6eae3dce03e8d,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -590,6 +595,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 768d0200077a0944fbd00d934e63bf37, type: 2}
+    - target: {fileID: 13700000, guid: df8cdffda565f4a48935ed8c917b02cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d5087ed476f1a8a41958e77a4b8a821b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: df8cdffda565f4a48935ed8c917b02cf, type: 3}
 --- !u!4 &1555974802 stripped
